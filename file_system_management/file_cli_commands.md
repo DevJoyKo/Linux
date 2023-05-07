@@ -44,7 +44,7 @@
 /etc/fstab 내용?
 (장치명) | (마운트 디렉터리) | (파일시스템) | (마운트 옵션) | (dump 백업설정) | (부팅 체크 옵션)
 
-마운트 옵션? 
+#### 마운트 옵션? 
 * default: rw, suid, dev, exec, auto, nouser, async
 * auto:
 * noauto:
