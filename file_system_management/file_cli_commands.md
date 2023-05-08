@@ -1,4 +1,4 @@
-### File management comand lines
+### File management command lines
 <hr>
 
 #### file, directory management
