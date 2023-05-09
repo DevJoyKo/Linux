@@ -46,5 +46,24 @@
 
     ex) rpm --rebuild 
     ex) rpmbuild --rebuild : ().src.rpm 파일을 패키지로 만드는 모드
+
+
+    # 소스코드 컴파일
+    # 설치 프로세스: 압축풀기 - 디렉터리 이동 - configure - make - make install
+    tar (옵션) (파일명)
+    -c: 묶어서 파일생성
+    -x: 파일 풀기
+    -v: 대상이 되며, 파일들을 보여줌
+    -f (파일명): 대상 파일명 지정
+    -r: 기존 파일 뒤에 추가
+    -t: tar 파일 안에 묶인 파일 목록 출력
+    -C: 디렉터리 변경시 사용
+    -p: 권한유지
+    -Z: 압축옵션 compress 형식) tar.Z
+    -z: 압축옵션 gzip 형식) tar.gz
+    -j: 압축옵션 bzip2 형식) tar.bz2
+    -J: 압축옵션 xz 형식) tar.xz
+
+    
     
     
