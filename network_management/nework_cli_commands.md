@@ -202,5 +202,21 @@ make -C /var/yp
     max_clients=50
     max_per_ip=3
 
+##### 메일관련 서비스
 
+    - /etc/mail/local-host-names
+    - /etc/mail/sendmail.mc
+    ex) makemap hash /etc/mail/access < /etc/mail/access
+
+    /etc/aliases
+    newaliases
+    sendmail -bi 
+
+    /etc/mail/virtusertable
+    ex) makemap hash /etc/mail/virtusertable < /etc/mail/virtusertable
+
+##### DNS 관리
+
+    /etc/named.conf 
+    /var/named zone 파일 위치
     
