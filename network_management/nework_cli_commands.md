@@ -180,5 +180,27 @@ make -C /var/yp
     -r:
     -a: 
     -u:
-    exportfs -au: 익스포트된 모든 디렉터리 햊-ㅔ
+    exportfs -au: 익스포트된 모든 디렉터리 해제
+
+    FTP 서버관리
+    설정파일 /etc/vsftpd/vsftpd/conf
+    anonymous_enable=YSE
+    local_enable=YES
+    write_enable=YES
+    local_umask=022
+    anon_upload_enable=YES
+    anon_mkdir_write_enable=YES
+    dirmessage_enable=YES
+    xferlog_enable=YES
+    connect_from_port_20=YES
+    chown_uploads=YES
+    xferlog_file=/var/log/xferlog
+    idle_session_timeout=600
+    data_connection_timeout=120
+    chroot_local_user=YES
+    tcp_wrappers=YES
+    max_clients=50
+    max_per_ip=3
+
+
     
